@@ -70,7 +70,7 @@ end
 
 ##Esta función toma un real y regresa una cadena con su representación binaria, incluyendo punto decimal
 
-function to_binary2(x)
+function to_binary2(x,cut)
     
     a=""
     b=""
@@ -100,11 +100,11 @@ function to_binary2(x)
         end
         
         i=i+1
-        if(i==1000)
+        if(i==cut)
             break
         end
     end
 
-    println(a*"."*b)
+    a*"."*b
            
 end
